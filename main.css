@@ -132,12 +132,11 @@
     z-index: 1;
     margin-bottom: 40px; /* Ensure the PinkCard image is above the icons */
   }
-  
+
   .centered-image img {
-    width: 200px; /* Increased size */
+    width: 200px;/* Increased size */
     height: auto;
   }
-
 
   body {
   background-image: url(images/WebsiteBackground1.svg);
