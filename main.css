@@ -1,0 +1,156 @@
+  /*import Font*/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :focus {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html, body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec); 
+  }
+  .wrapper {
+    display: inline-flex;
+    list-style: none; 
+    position: relative;
+    z-index: 1; /* Ensure icons are below the PinkCard image */
+    margin-top: 500px; 
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px; 
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .wrapper .name {
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    background: #ffffff;
+    color: #000000; /* Changed to ensure text is visible */
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .name::before { 
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .name {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; 
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .name {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .name,
+  .wrapper .youtube:hover .name::before {
+    background: #FF0000;
+    color: #ffffff;
+  }
+  
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .name,
+  .wrapper .linkedin:hover .name::before { 
+    background: #0077B5;
+    color: #ffffff;
+  }
+  
+  .wrapper .gmail:hover,
+  .wrapper .gmail:hover .name,
+  .wrapper .gmail:hover .name::before {
+    background: #D44638;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram:hover .name::before {
+    background: #ffa724;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .name {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #ffffff;
+  }
+
+
+  .centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-bottom: 40px; /* Ensure the PinkCard image is above the icons */
+  }
+  
+  .centered-image img {
+    width: 200px; /* Increased size */
+    height: auto;
+  }
+
+
+  body {
+  background-image: url(images/WebsiteBackground1.svg);
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+  
