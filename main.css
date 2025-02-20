@@ -122,7 +122,13 @@
     background: #8A5485;
     color: #ffffff;
   }
-
+/* Media Queries for Phone and Tablet */
+@media (max-width: 768px) {
+  .wrapper .icon {
+    width: 70px; /* Increased size for smaller screens */
+    height: 70px; /
+  }
+}
 
   .centered-image {
     position: absolute;
