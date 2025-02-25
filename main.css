@@ -1,15 +1,4 @@
-  /*import Font*/
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-  * { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :focus {
-    outline: none !important;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
+/* CSS for the PinkCard */
   html, body {
     display: grid;
     height: 100%;
@@ -122,13 +111,6 @@
     background: #8A5485;
     color: #ffffff;
   }
-/* Media Queries for Phone and Tablet */
-@media (max-width: 768px) {
-  .wrapper .icon {
-    width: 70px; /* Increased size for smaller screens */
-    height: 70px; /
-  }
-}
 
   .centered-image {
     position: absolute;
@@ -159,3 +141,10 @@
     gap: 10px;
   }
   
+/* Media Queries for Phone and Tablet */
+@media (max-width: 768px) {
+  .wrapper .icon {
+    width: 70px; /* Increased size for smaller screens */
+    height: 70px; /
+  }
+}
